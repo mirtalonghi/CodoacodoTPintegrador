@@ -18,21 +18,186 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" > <img src="./Imagenes TP integrador/codoacodo.png" width="70px"  alt="Ir codo a codo">Conf Bs as</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
-            <div class="navbar-nav mx-auto">
-              <a class="white-color nav-link active " aria-current="page" href="#">La Conferencia</a>
-              <a class="nav-link" href="#" >Los oradores</a>
-              <a class="nav-link" href="#">El lugar y la fecha</a>
-              <a class="nav-link" href="#">Convertite en orador</a>
-              <a class="nav-link" style="color:green" href="#">Comprar Tickets</a>
-               <!--color: rgb(255, 253, 255);-->
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" > <img src="./Imagenes TP integrador/codoacodo.png" width="70px"  alt="Ir codo a codo">Conf Bs as</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+          <div class="navbar-nav mx-auto">
+            <a class="white-color nav-link active " aria-current="page" href="#">La Conferencia</a>
+            <a class="nav-link" href="#" >Los oradores</a>
+            <a class="nav-link" href="#">El lugar y la fecha</a>
+            <a class="nav-link" href="#">Convertite en orador</a>
+            <a class="nav-link" style="color:green" href="#">Comprar Tickets</a>
+              <!--color: rgb(255, 253, 255);-->
           </div>
         </div>
-      </nav> 
+      </div>
+    </nav> 
+
+    <div id="displayTicket" >
+    <div id="ventaTicket">
+      <div class="contenedorVenta">
+        <div class="cat">
+          <div class="estudiante">
+            <p class="head"> <strong id="estudiante">Estudiante</strong></p>
+            <p>Tiene un descuento</p>
+            <strong value=80 class="estudianteValor">80%</strong>
+            <p class="foot">* presentar documentación</p>
+          </div>
+          <div class="trainee">
+            <p class="head"> <strong id="trainee">Trainee</strong></p>
+            <p>Tiene un descuento</p>
+            <strong value=50 class="traineeValor">50%</strong>
+            <p class="foot">* presentar documentación</p>
+          </div>
+          <div class="junior">
+            <p class="head"><strong id="junior">Junior</strong></p>
+            <p>Tiene un descuento</p>
+            <strong value=15 class="juniorValor">15%</strong>
+            <p class="foot">* presentar documentación</p>
+          </div>
+        </div>
+        <div class="texto-cabecera">
+          <p class="foot">VENTA</p>
+          <h2 value="200" class="valorTicket">VALOR DE TICKET $200</h2>
+        </div>
+
+        <form>
+            <div class="form-group">
+              <div class="col-sm-6">
+                <input class="form-control" type="text" placeholder="Nombre" required>
+              </div>
+              <div class="col-sm-6">
+                <input class="form-control" type="text" placeholder="Apellido" required>
+              </div>
+            </div>
+            <div class="form-control">
+              <input class="form-control" type="text" placeholder="Correo">
+            </div>
+
+            <div class="form-group">
+              <label for="nombre">Cantidad</label>
+              <input id="nombre" class="form-control" type="number" min="1" placeholder="Cantidad" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="categoriasLista">Categoria</label>
+              <input id="categoriasLista" class="form-control" placeholder='Click sobre Categoria' list="categorias" >
+              <datalist id="categorias">
+                  <option value="Estudiante">
+                  <option value="Trainee">
+                  <option value="Junior">
+              </datalist>
+            </div>
+
+            <div id="totalPagar" class="form-group bg-info">
+              Total a Pagar: $
+            </div>
+            <div class="form-group">
+              <button class="btn btn-success">Borrar</button>
+              <button class="btn btn-success">Resumen</button>
+            </div>
+        </form>
+      </div>
+    </div>
+    </div>
+        
+    <footer>
+      <div class="foot">Preguntas frecuentes</div>
+      <div class="foot">Contáctanos</div>
+      <div class="foot">Prensa</div>
+      <div class="foot">Conferencias</div>
+      <div class="foot">Términos y condiciones</div>
+      <div class="foot">Privacidad</div>
+      <div class="foot">Estudiantes</div>
+    </footer>
+        
+    <script src="code.js"></script>
+      
+
+    <!----  <div id="ventaTicket">
+
+        <div class="contenedorVenta">
+          <div class="cat">
+            <div class="estudiante">
+                <p class="head"> <strong id="estudiante">Estudiante</strong></p>
+                <p>Tiene un descuento</p>
+                <strong value=80 class="estudianteValor">80%</strong>
+                <p class="foot">* presentar documentación</p>
+            </div>
+            <div class="trainee">
+              <p class="head"> <strong id="trainee">Trainee</strong></p>
+              <p>Tiene un descuento</p>
+              <strong value=50 class="traineeValor">50%</strong>
+              <p class="foot">* presentar documentación</p>
+            </div>
+            <div class="junior">
+              <p class="head"><strong id="junior">Junior</strong></p>
+              <p>Tiene un descuento</p>
+              <strong value=15 class="juniorValor">15%</strong>
+              <p class="foot">* presentar documentación</p>
+            </div>
+          </div>  
+
+          <div class="textventa"> VENTA</div>
+          <div class="textvalorticket">VALOR DE TICKET $ 200</div>
+          
+        <div class= "contenedorVenta">
+          < class="formulario">
+                  <!----<div class="form-group row"> 
+                  <input class="col-sm-6" type="text" name="nombre" placeholder="Nombre" >
+                  <input class="col-sm-6" type="text" name="apellido" placeholder="Apellido" >
+                  </div>
+                  <div class="form-group row">
+                  <input type="text" name="correo" placeholder="Correo" >
+                 </div>
+                  <div class="form-group row"> 
+                    <input class="col-sm-6" type="number" name="Cantidad" placeholder="cantidad" >
+                   <input class="col-sm-6" type="search" name="Categoria" placeholder="categoria" >
+                 </div> 
+                 <div class="col-sm-6" style="float:left;">
+                  Cantidad <br> <input type="number" name="cantidad">
+                 </div>
+            
+                  <div class="col-sm-6" style="float:right;">
+                   Categoría <br><input type="search" name="categoría">
+                 </div>               
+                 </div>
+                 <input value= "Ingresar" type="submit" name="Enviar">	
+         
+           <div class="namesContainer">
+               <input class="nameNombre" type="text" placeholder="Nombre" required>
+               <input class="nameLast" type="text" placeholder="Apellido" required>
+          
+               <input class="nameCorreo" type="text" placeholder="Correo">
+               <div class="tagContainer">
+                   <div class="tags">
+                     <label class="tagLabel" for='nombre'> Cantidad</label>
+                     <input id="nombre" class="nameCant" type="number" min="1"  placeholder="Cantidad" required>
+                   </div>
+                </div>
+                <div class="tags">
+                   <label class="tagLabel" for="categoriasLista">Categoria</label>
+                   <input id="categoriasLista" class="nameCat" placeholder='Click sobre Categoria' list="categorias" >
+                   <datalist id="categorias">
+                      <option value="Estudiante">
+                      <option value="Trainee">
+                      <option value="Junior">
+                    </datalist>
+                 </div>
+             </div>
+        </div>
+      </div>
+
+      
+       <div class="formularioVenta">
+        <div class="texto-cabecera">
+           <p class="foot">VENTA</p>
+           <h2 value=200 class="valorTicket" >VALOR DE TICKET $200</h2></div>
+           <div id="totalPagar" class="hidden"></div>
+         </div> 
+  </div> -->
   </body>
+</html>

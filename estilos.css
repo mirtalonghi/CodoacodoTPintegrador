@@ -278,16 +278,10 @@ p{
 form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     max-height: fit-content;
 }
 
-@media (max-width:700px) {
-form{
-    width: 90%;
-}
-
-}
 
 .nombres-orador{
     border-radius: 5px;
@@ -330,3 +324,102 @@ form{
     width: -webkit-fill-available;
 
 }
+/* Parte de venta ticket */
+.hidden {
+    display:none;
+  }
+  
+  #ventaTicket{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .contenedorVenta{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: content-box;
+  width: 710px;
+  min-width: 500px;
+  height: 100%;
+  padding-top: 10px;
+  
+  }
+  .head { font-size: 20px;}
+  .foot{ font-size: 13px;
+        color: var(--lightgrey);
+       }
+
+  .cat{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    height: 180px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+      }
+
+
+    .estudiante,.trainee,.junior{
+      height: 170px;
+      width: 230px;
+      border-radius: 2px;
+      cursor: pointer;
+      }
+
+  .junior{
+    border:1px solid rgba(255,193,7,255);
+         }
+  .trainee{
+    border:1px solid rgba(81,185,201,255);
+          }
+  .estudiante{
+      border:1px solid rgba(15,131,255,255);
+             }
+ .textvalorticket{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 35px;
+        font-weight: bold;
+                 }
+  #formulario-ticket { 
+      align-items: center;
+                     }
+  .tagContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    grid-gap: 4px;
+               }
+  .tags{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+       }
+  .tagLabel{
+    margin-left: .5rem;
+  }
+  .nameCorreo, .nameCant, .nameCat{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 100%;
+    font-size: .9rem;
+    margin-top: .5rem;
+    padding: .5rem;
+}
+.namesContainer{
+    grid-gap: 4px;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .btnsTicket{
+    display: flex;
+    margin-top: 15px;
+    grid-gap: 4px;
+  }
