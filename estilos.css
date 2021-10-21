@@ -401,8 +401,9 @@ form {
     justify-content: center;
        }
   .tagLabel{
-    margin-left: .5rem;
+        margin-left: .5rem;
   }
+  
   .nameCorreo, .nameCant, .nameCat{
     border: 1px solid lightgrey;
     border-radius: 5px;
@@ -419,7 +420,78 @@ form {
     
   }
   .btnsTicket{
-    display: flex;
+    display:block;
     margin-top: 15px;
     grid-gap: 4px;
   }
+  .form-control{
+    grid-gap: 6px;
+    display:flex;
+    width: 100%;
+    justify-content:top;
+    padding:0px;
+    height: 45px;
+    
+  } 
+
+  .form-group{
+     text-align: left;
+  }  
+  .borrar,.resumen{
+    background: var(--softgreen) ;
+    border: none;
+    border-radius: 5px;
+    padding: .5rem;
+    color: white;
+    width: 50%;
+} 
+#totalPagar{
+        background: var(--blue) ;
+        border: none;
+        border-radius: 5px;
+        padding: .5rem;
+        color: white;
+        width: 100%;
+        height: 40px;
+        margin-top: 15px;
+    } 
+ footer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    padding: 0 5rem 0 5rem;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    border: none;
+    height: auto;
+    color: white;
+    font-size: small;
+    justify-content: space-evenly;
+    background: rgb(9,9,121);
+    background: linear-gradient(90deg, rgba(27,55,67,1) 0%, rgba(31,82,113,1) 100%);
+}
+
+    .foot{
+        padding: 10px;
+    }
+
+@media (max-width:880px){
+    footer{
+        flex-direction: column;
+        width: 100%;
+        height: 40px;
+        justify-content: center;
+        font-size: large;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+}
+
+
+
+
+.hidden {
+  display:none;
+}   

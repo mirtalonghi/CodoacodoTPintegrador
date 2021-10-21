@@ -66,43 +66,46 @@
 
         <form>
             <div class="form-group">
-              <div class="col-sm-6">
+              <div class="form-control">
                 <input class="form-control" type="text" placeholder="Nombre" required>
-              </div>
-              <div class="col-sm-6">
                 <input class="form-control" type="text" placeholder="Apellido" required>
               </div>
+              <br>
             </div>
             <div class="form-control">
               <input class="form-control" type="text" placeholder="Correo">
             </div>
-
-            <div class="form-group">
-              <label for="nombre">Cantidad</label>
-              <input id="nombre" class="form-control" type="number" min="1" placeholder="Cantidad" required>
+            <br>
+            <div clase="form-group"> 
+                  <label for="nombre" > Cantidad</label> 
+                  <label for="categoriasLista">Categoria</label>
             </div>
-            
             <div class="form-group">
-              <label for="categoriasLista">Categoria</label>
+              <div class= "form-control">
+              <input id="cantidad" class="form-control" type="number" min="1" placeholder="Cantidad" required>
               <input id="categoriasLista" class="form-control" placeholder='Click sobre Categoria' list="categorias" >
               <datalist id="categorias">
                   <option value="Estudiante">
                   <option value="Trainee">
                   <option value="Junior">
               </datalist>
+             </div>
+            </div>     
+            <br>
+            <div 
+                type="text" id="totalPagar"  class="form-control bg-info">Total a Pagar: $ 
             </div>
-
-            <div id="totalPagar" class="form-group bg-info">
-              Total a Pagar: $
-            </div>
-            <div class="form-group">
-              <button class="btn btn-success">Borrar</button>
-              <button class="btn btn-success">Resumen</button>
+            <br>
+            <div class="form-control" >
+                 <button type="button" id= "borra" class="borrar">Borrar</button>
+                 <button type="button" id="envia" class="resumen" onclick="calcular();" >Resumen</button>
+              </div>
             </div>
         </form>
       </div>
     </div>
-    </div>
+
+  
         
     <footer>
       <div class="foot">Preguntas frecuentes</div>
@@ -112,92 +115,7 @@
       <div class="foot">Términos y condiciones</div>
       <div class="foot">Privacidad</div>
       <div class="foot">Estudiantes</div>
-    </footer>
-        
-    <script src="code.js"></script>
-      
-
-    <!----  <div id="ventaTicket">
-
-        <div class="contenedorVenta">
-          <div class="cat">
-            <div class="estudiante">
-                <p class="head"> <strong id="estudiante">Estudiante</strong></p>
-                <p>Tiene un descuento</p>
-                <strong value=80 class="estudianteValor">80%</strong>
-                <p class="foot">* presentar documentación</p>
-            </div>
-            <div class="trainee">
-              <p class="head"> <strong id="trainee">Trainee</strong></p>
-              <p>Tiene un descuento</p>
-              <strong value=50 class="traineeValor">50%</strong>
-              <p class="foot">* presentar documentación</p>
-            </div>
-            <div class="junior">
-              <p class="head"><strong id="junior">Junior</strong></p>
-              <p>Tiene un descuento</p>
-              <strong value=15 class="juniorValor">15%</strong>
-              <p class="foot">* presentar documentación</p>
-            </div>
-          </div>  
-
-          <div class="textventa"> VENTA</div>
-          <div class="textvalorticket">VALOR DE TICKET $ 200</div>
-          
-        <div class= "contenedorVenta">
-          < class="formulario">
-                  <!----<div class="form-group row"> 
-                  <input class="col-sm-6" type="text" name="nombre" placeholder="Nombre" >
-                  <input class="col-sm-6" type="text" name="apellido" placeholder="Apellido" >
-                  </div>
-                  <div class="form-group row">
-                  <input type="text" name="correo" placeholder="Correo" >
-                 </div>
-                  <div class="form-group row"> 
-                    <input class="col-sm-6" type="number" name="Cantidad" placeholder="cantidad" >
-                   <input class="col-sm-6" type="search" name="Categoria" placeholder="categoria" >
-                 </div> 
-                 <div class="col-sm-6" style="float:left;">
-                  Cantidad <br> <input type="number" name="cantidad">
-                 </div>
-            
-                  <div class="col-sm-6" style="float:right;">
-                   Categoría <br><input type="search" name="categoría">
-                 </div>               
-                 </div>
-                 <input value= "Ingresar" type="submit" name="Enviar">	
-         
-           <div class="namesContainer">
-               <input class="nameNombre" type="text" placeholder="Nombre" required>
-               <input class="nameLast" type="text" placeholder="Apellido" required>
-          
-               <input class="nameCorreo" type="text" placeholder="Correo">
-               <div class="tagContainer">
-                   <div class="tags">
-                     <label class="tagLabel" for='nombre'> Cantidad</label>
-                     <input id="nombre" class="nameCant" type="number" min="1"  placeholder="Cantidad" required>
-                   </div>
-                </div>
-                <div class="tags">
-                   <label class="tagLabel" for="categoriasLista">Categoria</label>
-                   <input id="categoriasLista" class="nameCat" placeholder='Click sobre Categoria' list="categorias" >
-                   <datalist id="categorias">
-                      <option value="Estudiante">
-                      <option value="Trainee">
-                      <option value="Junior">
-                    </datalist>
-                 </div>
-             </div>
-        </div>
-      </div>
-
-      
-       <div class="formularioVenta">
-        <div class="texto-cabecera">
-           <p class="foot">VENTA</p>
-           <h2 value=200 class="valorTicket" >VALOR DE TICKET $200</h2></div>
-           <div id="totalPagar" class="hidden"></div>
-         </div> 
-  </div> -->
+    </footer>   
+    <script src="codigo.js"></script> 
   </body>
 </html>
